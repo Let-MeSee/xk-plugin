@@ -1,0 +1,63 @@
+{
+  "name": "@xk-team/xk-plugin",
+  "type": "module",
+  "version": "0.1.21",
+  "description": "适配Vue2/Vue3",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "unpkg": "dist/index.umd.js",
+  "files": [
+    "dist",
+    "src",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "rollup -c",
+    "pub": "npm run build && npm version patch && npm publish --access public && git push origin main && git push origin --tags"
+  },
+  "keywords": [
+    "vue2",
+    "vue3",
+    "upload",
+    "mobile",
+    "pc"
+  ],
+  "author": "ax",
+  "license": "MIT",
+  "peerDependencies": {
+    "vue": "^2.6.0 || ^3.2.0"
+  },
+  "optionalDependencies": {
+    "vant": "^2.0.0 || ^4.0.0"
+  },
+  "peerDependenciesMeta": {
+    "vue": {
+      "optional": false
+    },
+    "vant": {
+      "optional": true
+    }
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Let-MeSee/xk-plugin.git"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.29.0",
+    "@babel/preset-env": "^7.29.0",
+    "@rollup/plugin-babel": "^6.1.0",
+    "@rollup/plugin-commonjs": "^29.0.1",
+    "@rollup/plugin-node-resolve": "^16.0.3",
+    "@vue/compiler-sfc": "^3.5.29",
+    "@vue/composition-api": "^1.7.2",
+    "@vue/runtime-core": "^3.5.29",
+    "rollup": "^2.80.0",
+    "rollup-plugin-terser": "^7.0.2",
+    "rollup-plugin-vue": "^6.0.0",
+    "vue-template-compiler": "^2.7.16"
+  }
+}
