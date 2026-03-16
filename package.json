@@ -1,7 +1,7 @@
 {
   "name": "@xk-team/xk-plugin",
   "type": "module",
-  "version": "0.1.30",
+  "version": "0.1.31",
   "description": "适配Vue2/Vue3",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
