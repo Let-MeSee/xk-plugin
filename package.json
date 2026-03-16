@@ -13,7 +13,7 @@
   ],
   "scripts": {
     "build": "rollup -c",
-    "pub": "npm run build && npm version patch && npm publish --access public && git push origin main && git push origin --tags"
+    "pub": "npm run build && npm version patch && npm publish --access public && git push origin master && git push origin --tags"
   },
   "keywords": [
     "vue2",
