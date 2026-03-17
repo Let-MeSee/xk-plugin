@@ -1,3 +1,4 @@
 export * from './utils/enum.js'
 export * from './utils/validate.js'
-export * from './utils/util.js'
+import XkPlugin from './utils/util.js'
+export default XkPlugin

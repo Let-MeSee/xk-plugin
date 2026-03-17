@@ -4,7 +4,7 @@
 export default {
   install(Vue, options) {
     console.log('install')
-    console.log(arguments)
+    console.log(arguments) 
     Vue.sayHello = function () {
       console.log('hello world!')
     }
